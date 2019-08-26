@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>D3Times</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/d3Style.css">
+
+</head>
+
+<body style="background-color:	#F0F8FF;">
+
+    <div class="jumbotron" vertical-center">
+        <h1>Homework Module 16: D3</h1>
+              
+      </div>
+      <p class="lead">This project looks at the relationship between health indicators: obesity, smoking, and lack of healthcare as identified by poverty level, age, and household income.</p>
+        <p>Data Reference: <a href = "https://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml">U. S. Census Data: 2014</a>
+        <hr class="my-4">
+        <p>Click on the different chart options to view the changes in variables</p>
+    <div class="container">
+      
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-9">
+                <div id="scatter">
+                    <!-- Chart is appended here. -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-xs-12 col-md-9">
+                <div class="article">
+                                
+            <h3>Visualizing Data ~ Relationships Identified, But With Caveats</h3>
+                    <p>In analyzing a range of health indicators: obesity, smoking, and lack of healthcare, as measured against household income, poverty level and median age a few observations can be made through this visualization created from data collected by the U.S. 2014 Census Data Survey.</p>
+            
+                    <p>Looking first at the percentage of people living in poverty, a visible flip and higher percentage of smokers across the levels of poverty are much more apparent than the percentage of those living without healthcare. Overall, obesity is the highest across any income level, with the highest percentages being minimally aligned to higher poverty levels. This same "highest" measure is indicated also visible within smokers, but not as clearly indicated for those without healthcare. Identifying these levels by state, the southern states: Mississippi, Arkansas, Alabama, Georgia, Tennessee, and Louisiana are the states reflected with high percentage of smokers and obesity. Texas and New Mexico rank very high in percentage of people with no healthcare and high percentage levels of poverty. </p>
+                    <p>Moving from poverty level to overall median income level, lack of healthcare is much more clearly identified in lower income levels than in higher, but is stil markedly present in middle-income areas of $40-60k with little indicators or lack of healthcare over median income of $65k. Texas and Georgia are highest in percentage of non-insured people at low to mid-ranges of median income, with Alaska standing out as higher in non-insured at a higher income level ($70k). With similar percentage indicators, both smoking and obesity are much higher and more pronounced in percentage levels for lower incomes.</p>
+                    <p>Finally, when median age is used to look at health indicators, no healthcare is most centered in the age range of 30-40. But this also reflects the main portion of the population questioned is also in this age range. As ages go up, so does healthcare coverage, but very little median age is reflected over 45 in this data. For smoking, again the median age group was in the 30-40 range, with the same states showing as high in smoking as in the measures previously discussed. Utah is the outlier in this area, with a pronounced lower percentage of smokers as would be expected with the high percentage of Mormonism in the state that also forbids smoking. Obesity is very clustered and high in this same age range of 30-40, with the lowest percentages in the states of California, Massachusetts, Colorado, Hawaii, and the District of Columbia.</p>
+                    
+                    <p>Before any actual determinations of correlation should be made, a balance and analysis using other sources and more recent data -- perhaps looking longitudinally would help to provide more accurate and trusted analysis.  To show the danger of making assumptions based on correlations that look important, there is a website of <a hef="https://tylervigen.com/spurious-correlations">Spurious Correlations</a>. If nothing else, seeing the obscure, but close relationship between divorce rate in Maine and the per capita consumption of margarine (US) should give every reader pause and be a warning against making quick assumptions about perceived correlations. </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>
