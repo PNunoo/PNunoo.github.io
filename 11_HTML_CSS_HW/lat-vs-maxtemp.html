@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lat Vs. Max Temp</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .full-height {
+            height: 100%;
+            background: rgb(245, 244, 244);
+        }
+    </style>
+</head>
+
+<body class="font">
+    <nav class="navbar navbar-expand-md sticky-top bg-white navbar-light pt-0 pb-0" id="navbar-bg">
+        <a class="navbar-brand bg-primary text-white ml-5 pl-4 pr-4" href="./landing-page.html">
+            <h3>Web Visualization Dashboard</h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mr-5">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="./lat-vs-maxtemp.html">Max Temperature</a>
+                        <a class="dropdown-item" href="./lat-vs-humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="./lat-vs-cloudiness.html">Cloudiness</a>
+                        <a class="dropdown-item" href="./lat-vs-wind.html">Wind Speed</a>
+                    </div>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./data.html">Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="=container-fluid bg-color full-height">
+        <div class="row pt-5 justify-content-around">
+            <div class="col-md-12 col-lg-7">
+                <div class="card ml-3 mr-3 mb-5">
+                    <div class="card-body pl-5 pt-5 pb-5 pr-5">
+                        <h1 class="card-title text-primary ">Max Temperature</h1>
+                        <hr>
+                        <img class="pic-margins mt-4" src="Resources/assets/images/Fig1.png"
+                            alt="Lattitude Vs. Max temperature">
+                        <p class="card-text line-space mt-5 pl-5 pr-5 font-size">As expected, the weather becomes
+                            significantly warmer as one approaches the equator (0 Deg. Latitude). More interestingly,
+                            however, is the fact that the southern hemisphere tends to be warmer this time of year than
+                            the northern hemisphere. This may be due to the tilt of the earth at the time of the year
+                            this data was gathered.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-4">
+                <div class="card ml-3 mr-3">
+                    <div class="card-body pl-5 pt-5 pb-5">
+                        <div>
+                            <h3 class="card-title text-primary">Visualizations</h3>
+                            <hr>
+                            <a href="./lat-vs-maxtemp.html">
+                                <img class="pic-margins img-border" src="Resources/assets/images/Fig1.png"
+                                    alt="Lattitude Vs. Max temperature" style="float:left; width:200px; height:200px;">
+                            </a>
+                            <a href="./lat-vs-humidity.html">
+                                <img class="pic-margins" src="Resources/assets/images/Fig2.png"
+                                    alt="Lattitude Vs. Max temperature" style="float:left; width:200px; height:200px;">
+                            </a>
+                            <a href="./lat-vs-cloudiness.html">
+                                <img class="pic-margins" src="Resources/assets/images/Fig3.png"
+                                    alt="Lattitude Vs. Max temperature" style="float:left; width:200px; height:200px;">
+                            </a>
+                            <a href="./lat-vs-wind.html">
+                                <img class="pic-margins" src="Resources/assets/images/Fig4.png"
+                                    alt="Lattitude Vs. Max temperature" style="float:left; width:200px; height:200px;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+</body>
